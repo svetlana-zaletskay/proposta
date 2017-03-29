@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 @import url(bootstrap/bootstrap.css);
+.wrapper {
+  width: 100%; }
+
 .bg-main {
   background: url("images/bg-main.png") no-repeat;
-  min-height: 752px; }
+  background-size: cover;
+  height: 752px;
+  position: relative; }
   .bg-main .container-header {
     width: 100%;
     background-color: #f9f8f5;
@@ -12,10 +17,23 @@
       .bg-main .container-header .row-my .logo {
         text-align: right;
         padding: 10px 0 0 10px; }
+      .bg-main .container-header .row-my .nav-my {
+        position: static; }
+        .bg-main .container-header .row-my .nav-my .dropdown-my {
+          position: static;
+          bacground-color: #f9f8f5; }
       .bg-main .container-header .row-my .menu-link1:hover {
         color: #f9f8f5;
         background-color: #00abbc;
         border-radius: 0px; }
+      .bg-main .container-header .row-my .arrow {
+        color: #f9f8f5;
+        position: absolute; }
+      .bg-main .container-header .row-my .menu-link1:hover > .arrow {
+        color: #00abbc;
+        position: absolute;
+        top: 13px;
+        left: 48px; }
       .bg-main .container-header .row-my .menu-link1 {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
@@ -24,7 +42,10 @@
         text-align: right;
         line-height: 2em;
         padding: 0 12px 0 12px;
-        margin: 8px -6px 8px 13px; }
+        margin: 8px -6px 8px 13px;
+        position: relative; }
+      .bg-main .container-header .row-my .menu-link2:hover > .arrow {
+        left: 33px; }
       .bg-main .container-header .row-my .menu-link2 {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
@@ -33,7 +54,10 @@
         text-align: right;
         line-height: 2em;
         padding: 0 12px 0 12px;
-        margin: 8px -6px 8px 13px; }
+        margin: 8px -6px 8px 13px;
+        position: relative; }
+      .bg-main .container-header .row-my .menu-link3:hover > .arrow, .bg-main .container-header .row-my .menu-link4:hover > .arrow {
+        left: 28px; }
       .bg-main .container-header .row-my .telephone-link {
         margin-left: 95px; }
       .bg-main .container-header .row-my .li-blue {
@@ -48,7 +72,25 @@
         padding-top: 9px;
         margin: 0 0 0 -2px; }
   .bg-main .dropdown:hover > .dropdown-menu {
-    display: block; }
+    display: block;
+    width: 101%;
+    position: absolute;
+    top: 48px;
+    border-radius: 0;
+    border: none;
+    background-color: #f9f8f5; }
+    .bg-main .dropdown:hover > .dropdown-menu .dropdown-1, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: 13%; }
+      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 .h-list, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 .h-list {
+        font-size: 18px; }
+      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 .link, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 .link {
+        margin-left: -23%;
+        color: #444242; }
+      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 a:hover, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 a:hover {
+        color: #00abbc;
+        text-decoration: none; }
 
 .body {
   width: 100%; }
