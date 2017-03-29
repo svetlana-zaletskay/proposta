@@ -36,7 +36,7 @@
         left: 48px; }
       .bg-main .container-header .row-my .menu-link1 {
         font-family: 'Lato', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 11px;
         color: #494748;
         text-align: right;
@@ -48,7 +48,7 @@
         left: 33px; }
       .bg-main .container-header .row-my .menu-link2 {
         font-family: 'Lato', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 11px;
         color: #494748;
         text-align: right;
@@ -78,19 +78,26 @@
     top: 48px;
     border-radius: 0;
     border: none;
-    background-color: #f9f8f5; }
-    .bg-main .dropdown:hover > .dropdown-menu .dropdown-1, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 {
-      display: inline-block;
-      list-style-type: none;
-      margin-left: 13%; }
-      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 .h-list, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 .h-list {
-        font-size: 18px; }
-      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 .link, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 .link {
-        margin-left: -23%;
-        color: #444242; }
-      .bg-main .dropdown:hover > .dropdown-menu .dropdown-1 a:hover, .bg-main .dropdown:hover > .dropdown-menu .dropdown-2 a:hover {
-        color: #00abbc;
-        text-decoration: none; }
+    background-color: #f9f8f5;
+    padding-left: 13%; }
+  .bg-main .dropdown-1, .bg-main .dropdown-2 {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 5%;
+    border-right: 1px solid #dbdbdb; }
+    .bg-main .dropdown-1 .h-list, .bg-main .dropdown-2 .h-list {
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 15%; }
+    .bg-main .dropdown-1 a, .bg-main .dropdown-2 a {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      text-decoration: none;
+      color: #494748; }
+    .bg-main .dropdown-1 a:hover, .bg-main .dropdown-2 a:hover {
+      color: #00abbc;
+      text-decoration: none; }
 
 .body {
   width: 100%; }

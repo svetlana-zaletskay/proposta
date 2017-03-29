@@ -1,6 +1,6 @@
 @mixin menuLinkStyle {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 11px;
   color: #494748;
   text-align: right;
@@ -10,7 +10,12 @@
   position: relative;
 }
 
-
+@mixin linkDrop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+}
 
 .wrapper {
   width: 100%;
@@ -47,7 +52,7 @@
         color: #f9f8f5;
         position: absolute;
       }
-      .menu-link1:hover > .arrow {
+      .menu-link1:hover>.arrow {
         color: #00abbc;
         position: absolute;
         top: 13px;
@@ -56,13 +61,13 @@
       .menu-link1 {
         @include menuLinkStyle;
       }
-      .menu-link2:hover > .arrow {
+      .menu-link2:hover>.arrow {
         left: 33px;
       }
       .menu-link2 {
         @include menuLinkStyle;
       }
-      .menu-link3:hover > .arrow, .menu-link4:hover > .arrow {
+      .menu-link3:hover>.arrow,.menu-link4:hover>.arrow {
         left: 28px;
       }
       .telephone-link {
@@ -84,7 +89,7 @@
       }
     }
   }
-  .dropdown:hover >.dropdown-menu {
+  .dropdown:hover>.dropdown-menu {
     display: block;
     width: 101%;
     position: absolute;
@@ -92,27 +97,27 @@
     border-radius: 0;
     border: none;
     background-color: #f9f8f5;
-
-    .dropdown-1, .dropdown-2 {
-      display: inline-block;
-      list-style-type: none;
-      margin-left: 13%;
-      .h-list{
-        font-size: 18px;
-
-      }
-      .link{
-        margin-left: -23%;
-        color: #444242;
-      }
-      //a {
-      //  @include menuLinkStyle;
-      //  color: #444242;
-      //}
-      a:hover {
-        color: #00abbc;
-        text-decoration: none;
-      }
+    padding-left: 13%;
+  }
+  .dropdown-1,.dropdown-2 {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 5%;
+    border-right: 1px solid #dbdbdb;
+    .h-list {
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 15%;
+    }
+    a{
+      @include linkDrop;
+      color: #494748;
+    }
+    a:hover {
+      color: #00abbc;
+      text-decoration: none;
     }
   }
 }
+
+
