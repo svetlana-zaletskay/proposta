@@ -1,0 +1,25 @@
+.input-group-my {
+  margin-bottom:10px;
+  border: 1px solid #000;
+  .input-group-addon-my{
+    border-right: 0;
+    background-color: white;
+    border-radius: 0px;
+    border: none;
+    .glyphicon-user-my{
+      border: none;
+    }
+    .glyphicon-lock-my{
+      border: none;
+    }
+    .form-my{
+      border-left: 0;
+      border-radius: 0px;
+      box-shadow: 0 0;
+      border: none;
+
+    }
+  }
+}
+
+

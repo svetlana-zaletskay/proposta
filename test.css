@@ -1,0 +1,19 @@
+.input-group-my {
+  margin-bottom: 10px;
+  border: 1px solid #000; }
+  .input-group-my .input-group-addon-my {
+    border-right: 0;
+    background-color: white;
+    border-radius: 0px;
+    border: none; }
+    .input-group-my .input-group-addon-my .glyphicon-user-my {
+      border: none; }
+    .input-group-my .input-group-addon-my .glyphicon-lock-my {
+      border: none; }
+    .input-group-my .input-group-addon-my .form-my {
+      border-left: 0;
+      border-radius: 0px;
+      box-shadow: 0 0;
+      border: none; }
+
+/*# sourceMappingURL=test.css.map */

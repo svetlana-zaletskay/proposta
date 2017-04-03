@@ -9,18 +9,21 @@
   margin: 8px -6px 8px 13px;
   position: relative;
 }
-
 @mixin linkDrop {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-decoration: none;
 }
+@mixin borderNone{
+  border-radius: 0px;
+  box-shadow: 0 0;
+  border: none;
+}
 
 .wrapper {
   width: 100%;
 }
-
 .bg-main {
   background: url("images/bg-main.png") no-repeat;
   background-size: cover;
@@ -35,6 +38,7 @@
       .logo {
         text-align: right;
         padding: 10px 0 0 10px;
+        float: left;
       }
       .nav-my {
         position: static;
@@ -52,7 +56,7 @@
         color: #f9f8f5;
         position: absolute;
       }
-      .menu-link1:hover>.arrow {
+      .menu-link1:hover > .arrow {
         color: #00abbc;
         position: absolute;
         top: 13px;
@@ -61,13 +65,13 @@
       .menu-link1 {
         @include menuLinkStyle;
       }
-      .menu-link2:hover>.arrow {
+      .menu-link2:hover > .arrow {
         left: 33px;
       }
       .menu-link2 {
         @include menuLinkStyle;
       }
-      .menu-link3:hover>.arrow,.menu-link4:hover>.arrow {
+      .menu-link3:hover > .arrow, .menu-link4:hover > .arrow {
         left: 28px;
       }
       .telephone-link {
@@ -88,18 +92,84 @@
         margin: 0 0 0 -2px;
       }
     }
+    .div-form-wrapper{
+      float: right;
+    }
+    .form-my {
+      border-left: 0;
+      @include borderNone;
+    }
+    .input-group-my {
+      border: 1px solid #000;
+      max-width: 130px;
+      min-height: 25px;
+      margin-bottom: 5px;
+      .input-text{
+        @include borderNone;
+        padding: 0;
+        height: 23px;
+        font-family: Lato Regular;
+        font-size: 11px;
+      }
+      .input-group-addon-my {
+        border-right: 0;
+        background-color: white;
+        padding: 0 5px 0 6px;
+        @include borderNone;
+        .glyphicon-user-my,.glyphicon-lock-my {
+          border: none;
+          color: #747070;
+        }
+      }
+    }
+    .div-button-acesso{
+      text-align: center;
+    }
+    .checkbox-div{
+      padding: 0;
+      line-height: 1.7em;
+      display: inline-block;
+    }
+    .div-link-form{
+      display: inline-block;
+      padding: 0 0 0 6px;
+      line-height: 1.4em;
+    }
+    .checkbox-my,.link-form{
+      color: #504b4b;
+      font-family: 'Lato lightItalic',sans-serif;
+      font-size: 8px;
+      margin: 0;
+    }
+    .link-form{
+      text-decoration: underline;
+    }
+    .button-acesso {
+      background-color: #00abbc;
+      border:none;
+      border-radius: 0px;
+      width: 100%;
+      min-height: 25px;
+      padding: 0;
+    }
+    .link-check-in{
+      font-family: "Lato lightItalic", sans-serif;
+      font-size: 8px;
+      color: #00abbc;
+      padding: 0;
+      text-align: center;
+    }
   }
-  .dropdown:hover>.dropdown-menu {
+  .dropdown:hover > .dropdown-menu {
     display: block;
     width: 101%;
     position: absolute;
     top: 48px;
-    border-radius: 0;
-    border: none;
+    @include borderNone;
     background-color: #f9f8f5;
     padding-left: 13%;
   }
-  .dropdown-1,.dropdown-2 {
+  .dropdown-1, .dropdown-2 {
     display: inline-block;
     list-style-type: none;
     padding-right: 5%;
@@ -109,7 +179,7 @@
       font-weight: 700;
       padding-bottom: 15%;
     }
-    a{
+    a {
       @include linkDrop;
       color: #494748;
     }

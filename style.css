@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
-@import url(bootstrap/bootstrap.css);
+@import url(css/bootstrap.css);
 .wrapper {
   width: 100%; }
 
@@ -16,7 +16,8 @@
       margin-left: 16px; }
       .bg-main .container-header .row-my .logo {
         text-align: right;
-        padding: 10px 0 0 10px; }
+        padding: 10px 0 0 10px;
+        float: left; }
       .bg-main .container-header .row-my .nav-my {
         position: static; }
         .bg-main .container-header .row-my .nav-my .dropdown-my {
@@ -71,12 +72,73 @@
       .bg-main .container-header .row-my ul {
         padding-top: 9px;
         margin: 0 0 0 -2px; }
+    .bg-main .container-header .div-form-wrapper {
+      float: right; }
+    .bg-main .container-header .form-my {
+      border-left: 0;
+      border-radius: 0px;
+      box-shadow: 0 0;
+      border: none; }
+    .bg-main .container-header .input-group-my {
+      border: 1px solid #000;
+      max-width: 130px;
+      min-height: 25px;
+      margin-bottom: 5px; }
+      .bg-main .container-header .input-group-my .input-text {
+        border-radius: 0px;
+        box-shadow: 0 0;
+        border: none;
+        padding: 0;
+        height: 23px;
+        font-family: Lato Regular;
+        font-size: 11px; }
+      .bg-main .container-header .input-group-my .input-group-addon-my {
+        border-right: 0;
+        background-color: white;
+        padding: 0 5px 0 6px;
+        border-radius: 0px;
+        box-shadow: 0 0;
+        border: none; }
+        .bg-main .container-header .input-group-my .input-group-addon-my .glyphicon-user-my, .bg-main .container-header .input-group-my .input-group-addon-my .glyphicon-lock-my {
+          border: none;
+          color: #747070; }
+    .bg-main .container-header .div-button-acesso {
+      text-align: center; }
+    .bg-main .container-header .checkbox-div {
+      padding: 0;
+      line-height: 1.7em;
+      display: inline-block; }
+    .bg-main .container-header .div-link-form {
+      display: inline-block;
+      padding: 0 0 0 6px;
+      line-height: 1.4em; }
+    .bg-main .container-header .checkbox-my, .bg-main .container-header .link-form {
+      color: #504b4b;
+      font-family: 'Lato lightItalic',sans-serif;
+      font-size: 8px;
+      margin: 0; }
+    .bg-main .container-header .link-form {
+      text-decoration: underline; }
+    .bg-main .container-header .button-acesso {
+      background-color: #00abbc;
+      border: none;
+      border-radius: 0px;
+      width: 100%;
+      min-height: 25px;
+      padding: 0; }
+    .bg-main .container-header .link-check-in {
+      font-family: "Lato lightItalic", sans-serif;
+      font-size: 8px;
+      color: #00abbc;
+      padding: 0;
+      text-align: center; }
   .bg-main .dropdown:hover > .dropdown-menu {
     display: block;
     width: 101%;
     position: absolute;
     top: 48px;
-    border-radius: 0;
+    border-radius: 0px;
+    box-shadow: 0 0;
     border: none;
     background-color: #f9f8f5;
     padding-left: 13%; }

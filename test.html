@@ -7,56 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="test.css">
 
 </head>
-<body>
-<!--<div class="container-fluid">-->
-<!--<div class="row">-->
-<!--<ul class="nav nav-pills">-->
-<!--<li class="dropdown">-->
-<!--<a href="#" data-toggle="dropdown" class="dropdown-toggle">Меню-->
-<!--<b class="caret"></b>-->
-<!--</a>-->
-<!--<ul class="dropdown-menu" role="menu">-->
-<!--<li><a href="#">Текст подпункта</a></li>-->
-<!--<li><a href="#">Текст подпункта</a></li>-->
-<!--<li class="divider"></li>-->
-<!--<li><a href="#">Текст подпункта</a></li>-->
-<!--</ul>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-<div class="container-fluid container-my">
-    <header>
-        <div class="bg-main">
-            <div class="container container-header">
-                <div class="row row-my">
-                    <a href="#" class="col-lg-2 logo"><img src="images/img-logo.png" width="72" height="24" alt="logo"/></a>
-                    <ul class="nav nav-pills col-lg-10">
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-link1">O que
-                                fazemos
-                                <b class="caret"></b>
-                                <div class="arrow">&#9660</div>
-                            </a>
-                            <ul class="drop-menu">
-                                <li class="drop-link"></li>
-                                <li class="drop-link"></li>
-                                <li class="drop-link"></li>
-                            </ul>
-                        </li>
-                    </ul>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-6">
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 login-box">
+                                <form role="form form-my">
+                                    <div class="input-group input-group-my">
+                                        <span class="input-group-addon input-group-addon-my"><span
+                                                class="glyphicon glyphicon-user glyphicon-user-my"></span></span>
+                                        <input type="text" class="form-control" placeholder="Имя пользователя" required
+                                               autofocus/>
+                                    </div>
+                                    <div class="input-group input-group-my">
+                                        <span class="input-group-addon input-group-addon-my"><span
+                                                class="glyphicon glyphicon-lock glyphicon-lock-my"></span></span>
+                                        <input type="password" class="form-control" placeholder="Ваш пароль" required/>
+                                    </div>
+                                    <p>
+                                        <a href="#">Забыли свой пароль?</a>
+                                    </p>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="Remember">
+                                                Запомнить меня
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <button type="button" class="btn btn-labeled btn-success">
+                            <span class="btn-label"><i class="glyphicon"></i></span>Войти
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    </div>
+    </div>
+</header>
 </div>
 </body>
 <footer>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
 </footer>
-
 </html>
