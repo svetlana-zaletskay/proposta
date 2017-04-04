@@ -20,7 +20,7 @@
         float: left; }
       .bg-main .container-header .row-my .nav-my {
         position: static; }
-        .bg-main .container-header .row-my .nav-my .dropdown-my {
+        .bg-main .container-header .row-my .nav-my .dropdown-my, .bg-main .container-header .row-my .nav-my .dropdown-form {
           position: static;
           bacground-color: #f9f8f5; }
       .bg-main .container-header .row-my .menu-link1:hover {
@@ -72,94 +72,109 @@
       .bg-main .container-header .row-my ul {
         padding-top: 9px;
         margin: 0 0 0 -2px; }
-    .bg-main .container-header .div-form-wrapper {
-      float: right; }
-    .bg-main .container-header .form-my {
-      border-left: 0;
-      border-radius: 0px;
-      box-shadow: 0 0;
-      border: none; }
-    .bg-main .container-header .input-group-my {
-      border: 1px solid #000;
-      max-width: 130px;
-      min-height: 25px;
-      margin-bottom: 5px; }
-      .bg-main .container-header .input-group-my .input-text {
-        border-radius: 0px;
-        box-shadow: 0 0;
-        border: none;
-        padding: 0;
-        height: 23px;
-        font-family: Lato Regular;
-        font-size: 11px; }
-      .bg-main .container-header .input-group-my .input-group-addon-my {
-        border-right: 0;
-        background-color: white;
-        padding: 0 5px 0 6px;
+      .bg-main .container-header .row-my .login-box {
+        padding: 0%; }
+      .bg-main .container-header .row-my .panel {
+        padding-left: 16px;
+        bacground-color: #f9f8f5;
+        border-radius: 0; }
+      .bg-main .container-header .row-my .panel-body {
+        text-align: -webkit-center;
+        margin: 0;
+        padding: 7px 0 0 15px; }
+      .bg-main .container-header .row-my .div-form-wrapper {
+        position: absolute;
+        right: 9%;
+        top: 100%; }
+      .bg-main .container-header .row-my .form-my {
+        border-left: 0;
         border-radius: 0px;
         box-shadow: 0 0;
         border: none; }
-        .bg-main .container-header .input-group-my .input-group-addon-my .glyphicon-user-my, .bg-main .container-header .input-group-my .input-group-addon-my .glyphicon-lock-my {
+      .bg-main .container-header .row-my .input-group-my {
+        border: 1px solid #000;
+        max-width: 130px;
+        min-height: 25px;
+        margin-bottom: 5px; }
+        .bg-main .container-header .row-my .input-group-my .input-text {
+          border-radius: 0px;
+          box-shadow: 0 0;
           border: none;
-          color: #747070; }
-    .bg-main .container-header .div-button-acesso {
-      text-align: center; }
-    .bg-main .container-header .checkbox-div {
-      padding: 0;
-      line-height: 1.7em;
-      display: inline-block; }
-    .bg-main .container-header .div-link-form {
-      display: inline-block;
-      padding: 0 0 0 6px;
-      line-height: 1.4em; }
-    .bg-main .container-header .checkbox-my, .bg-main .container-header .link-form {
-      color: #504b4b;
-      font-family: 'Lato lightItalic',sans-serif;
-      font-size: 8px;
-      margin: 0; }
-    .bg-main .container-header .link-form {
-      text-decoration: underline; }
-    .bg-main .container-header .button-acesso {
-      background-color: #00abbc;
-      border: none;
-      border-radius: 0px;
-      width: 100%;
-      min-height: 25px;
-      padding: 0; }
-    .bg-main .container-header .link-check-in {
-      font-family: "Lato lightItalic", sans-serif;
-      font-size: 8px;
-      color: #00abbc;
-      padding: 0;
-      text-align: center; }
-  .bg-main .dropdown:hover > .dropdown-menu {
-    display: block;
-    width: 101%;
-    position: absolute;
-    top: 48px;
-    border-radius: 0px;
-    box-shadow: 0 0;
-    border: none;
-    background-color: #f9f8f5;
-    padding-left: 13%; }
-  .bg-main .dropdown-1, .bg-main .dropdown-2 {
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 5%;
-    border-right: 1px solid #dbdbdb; }
-    .bg-main .dropdown-1 .h-list, .bg-main .dropdown-2 .h-list {
-      font-size: 18px;
-      font-weight: 700;
-      padding-bottom: 15%; }
-    .bg-main .dropdown-1 a, .bg-main .dropdown-2 a {
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      text-decoration: none;
-      color: #494748; }
-    .bg-main .dropdown-1 a:hover, .bg-main .dropdown-2 a:hover {
-      color: #00abbc;
-      text-decoration: none; }
+          padding: 0;
+          height: 23px;
+          font-family: Lato Regular;
+          font-size: 11px; }
+        .bg-main .container-header .row-my .input-group-my .input-group-addon-my {
+          border-right: 0;
+          background-color: white;
+          padding: 0 5px 0 6px;
+          border-radius: 0px;
+          box-shadow: 0 0;
+          border: none; }
+          .bg-main .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-user-my, .bg-main .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-lock-my {
+            border: none;
+            color: #747070; }
+      .bg-main .container-header .row-my .div-button-acesso {
+        text-align: center;
+        width: 60%; }
+      .bg-main .container-header .row-my .checkbox-div {
+        padding: 0;
+        line-height: 1.7em;
+        display: inline-block;
+        text-align: -webkit-right; }
+      .bg-main .container-header .row-my .div-link-form {
+        display: inline-block;
+        padding: 0 0 0 0px;
+        line-height: 1.4em; }
+      .bg-main .container-header .row-my .checkbox-my, .bg-main .container-header .row-my .link-form {
+        color: #504b4b;
+        font-family: 'Lato lightItalic', sans-serif;
+        font-size: 8px;
+        margin: 0; }
+      .bg-main .container-header .row-my .link-form {
+        text-decoration: underline; }
+      .bg-main .container-header .row-my .button-acesso {
+        background-color: #00abbc;
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        min-height: 25px;
+        padding: 0; }
+      .bg-main .container-header .row-my .link-check-in {
+        font-family: "Lato lightItalic", sans-serif;
+        font-size: 8px;
+        color: #00abbc;
+        padding: 0;
+        text-align: center;
+        text-decoration: underline; }
+      .bg-main .container-header .row-my .dropdown:hover > .dropdown-menu {
+        display: block;
+        width: 101%;
+        position: absolute;
+        top: 48px;
+        border-radius: 0px;
+        box-shadow: 0 0;
+        border: none;
+        background-color: #f9f8f5;
+        padding-left: 13%; }
+      .bg-main .container-header .row-my .dropdown-1, .bg-main .container-header .row-my .dropdown-2 {
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 5%;
+        border-right: 1px solid #dbdbdb; }
+        .bg-main .container-header .row-my .dropdown-1 .h-list, .bg-main .container-header .row-my .dropdown-2 .h-list {
+          font-size: 18px;
+          font-weight: 700;
+          padding-bottom: 15%; }
+        .bg-main .container-header .row-my .dropdown-1 a, .bg-main .container-header .row-my .dropdown-2 a {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          text-decoration: none;
+          color: #494748; }
+        .bg-main .container-header .row-my .dropdown-1 a:hover, .bg-main .container-header .row-my .dropdown-2 a:hover {
+          color: #00abbc;
+          text-decoration: none; }
 
 .body {
   width: 100%; }

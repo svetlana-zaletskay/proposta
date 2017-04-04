@@ -42,10 +42,11 @@
       }
       .nav-my {
         position: static;
-        .dropdown-my {
+        .dropdown-my,.dropdown-form {
           position: static;
           bacground-color: #f9f8f5;
         }
+
       }
       .menu-link1:hover {
         color: #f9f8f5;
@@ -91,101 +92,120 @@
         padding-top: 9px;
         margin: 0 0 0 -2px;
       }
-    }
-    .div-form-wrapper{
-      float: right;
-    }
-    .form-my {
-      border-left: 0;
-      @include borderNone;
-    }
-    .input-group-my {
-      border: 1px solid #000;
-      max-width: 130px;
-      min-height: 25px;
-      margin-bottom: 5px;
-      .input-text{
-        @include borderNone;
-        padding: 0;
-        height: 23px;
-        font-family: Lato Regular;
-        font-size: 11px;
+
+      .login-box {
+        padding: 0%;
       }
-      .input-group-addon-my {
-        border-right: 0;
-        background-color: white;
-        padding: 0 5px 0 6px;
+      .panel {
+        padding-left: 16px;
+        bacground-color: #f9f8f5;
+        border-radius: 0;
+      }
+      .panel-body {
+        text-align: -webkit-center;
+        margin: 0;
+        padding: 7px 0 0 15px;
+      }
+      .div-form-wrapper {
+        position: absolute;
+        right: 9%;
+        top: 100%;
+      }
+      .form-my {
+        border-left: 0;
         @include borderNone;
-        .glyphicon-user-my,.glyphicon-lock-my {
-          border: none;
-          color: #747070;
+      }
+      .input-group-my {
+        border: 1px solid #000;
+        max-width: 130px;
+        min-height: 25px;
+        margin-bottom: 5px;
+        .input-text {
+          @include borderNone;
+          padding: 0;
+          height: 23px;
+          font-family: Lato Regular;
+          font-size: 11px;
+        }
+        .input-group-addon-my {
+          border-right: 0;
+          background-color: white;
+          padding: 0 5px 0 6px;
+          @include borderNone;
+          .glyphicon-user-my, .glyphicon-lock-my {
+            border: none;
+            color: #747070;
+          }
         }
       }
-    }
-    .div-button-acesso{
-      text-align: center;
-    }
-    .checkbox-div{
-      padding: 0;
-      line-height: 1.7em;
-      display: inline-block;
-    }
-    .div-link-form{
-      display: inline-block;
-      padding: 0 0 0 6px;
-      line-height: 1.4em;
-    }
-    .checkbox-my,.link-form{
-      color: #504b4b;
-      font-family: 'Lato lightItalic',sans-serif;
-      font-size: 8px;
-      margin: 0;
-    }
-    .link-form{
-      text-decoration: underline;
-    }
-    .button-acesso {
-      background-color: #00abbc;
-      border:none;
-      border-radius: 0px;
-      width: 100%;
-      min-height: 25px;
-      padding: 0;
-    }
-    .link-check-in{
-      font-family: "Lato lightItalic", sans-serif;
-      font-size: 8px;
-      color: #00abbc;
-      padding: 0;
-      text-align: center;
-    }
-  }
-  .dropdown:hover > .dropdown-menu {
-    display: block;
-    width: 101%;
-    position: absolute;
-    top: 48px;
-    @include borderNone;
-    background-color: #f9f8f5;
-    padding-left: 13%;
-  }
-  .dropdown-1, .dropdown-2 {
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 5%;
-    border-right: 1px solid #dbdbdb;
-    .h-list {
-      font-size: 18px;
-      font-weight: 700;
-      padding-bottom: 15%;
-    }
-    a {
-      @include linkDrop;
-      color: #494748;
-    }
-    a:hover {
-      color: #00abbc;
-      text-decoration: none;
+      .div-button-acesso {
+        text-align: center;
+        width: 60%;
+      }
+      .checkbox-div {
+        padding: 0;
+        line-height: 1.7em;
+        display: inline-block;
+        text-align: -webkit-right;
+      }
+      .div-link-form {
+        display: inline-block;
+        padding: 0 0 0 0px;
+        line-height: 1.4em;
+      }
+      .checkbox-my, .link-form {
+        color: #504b4b;
+        font-family: 'Lato lightItalic', sans-serif;
+        font-size: 8px;
+        margin: 0;
+      }
+      .link-form {
+        text-decoration: underline;
+      }
+      .button-acesso {
+        background-color: #00abbc;
+        border: none;
+        border-radius: 0px;
+        width: 100%;
+        min-height: 25px;
+        padding: 0;
+      }
+      .link-check-in {
+        font-family: "Lato lightItalic", sans-serif;
+        font-size: 8px;
+        color: #00abbc;
+        padding: 0;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+        width: 101%;
+        position: absolute;
+        top: 48px;
+        @include borderNone;
+        background-color: #f9f8f5;
+        padding-left: 13%;
+      }
+      .dropdown-1, .dropdown-2 {
+        display: inline-block;
+        list-style-type: none;
+        padding-right: 5%;
+        border-right: 1px solid #dbdbdb;
+        .h-list {
+          font-size: 18px;
+          font-weight: 700;
+          padding-bottom: 15%;
+        }
+        a {
+          @include linkDrop;
+          color: #494748;
+        }
+        a:hover {
+          color: #00abbc;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
