@@ -27,8 +27,9 @@
 .bg-main {
   background: url("images/bg-main.png") no-repeat;
   background-size: cover;
-  height: 752px;
+  height: 700px;
   position: relative;
+  background-position: 0px 25px;
   .container-header {
     width: 100%;
     background-color: #f9f8f5;
@@ -108,7 +109,7 @@
       }
       .div-form-wrapper {
         position: absolute;
-        right: 9%;
+        right: 2.5%;
         top: 100%;
       }
       .form-my {
@@ -119,7 +120,7 @@
         border: 1px solid #000;
         max-width: 130px;
         min-height: 25px;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
         .input-text {
           @include borderNone;
           padding: 0;
@@ -180,9 +181,10 @@
       }
       .dropdown:hover > .dropdown-menu {
         display: block;
-        width: 101%;
+        width: 100%;
         position: absolute;
         top: 48px;
+        left:2px;
         @include borderNone;
         background-color: #f9f8f5;
         padding-left: 13%;
@@ -206,6 +208,51 @@
           text-decoration: none;
         }
       }
+    }
+  }
+  .text-on-bg{
+    margin: 183px 0 0 182px;
+
+    .h-1-bg {
+      font-family: 'Lato Bold', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #0000;
+    }
+    .h-2-bg{
+      font-family: 'Lato Light',fantasy ;
+      font-weight: 400;
+      font-size: 30px;
+      color: #f9f8f5;
+    }
+    .text-1-bg{
+      font-family: 'Lato Light',sans-serif;
+      font-size: 13px;
+      color: #f9f8f5;
+      line-height: 24px;
+      padding: 23px 0 0 0;
+    }
+    .text-2-bg{
+      font-family: 'Lato Bold',sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: #000;
+      text-indent: 58px;
+      padding: 17px 0 0 0;
+    }
+    .button-bg-main{
+      font-family: 'Lato Light', sans-serif;
+      font-size: 11px;
+      color: #f9f8f5;
+      background-color: transparent;
+      border: 1px solid #f9f8f5;
+      min-height:40px;
+      margin: 26px 0 0 3px;
+      width: 12.9%;
+    }
+    .button-bg-main:hover{
+      background-color: #f9f8f5;
+      color: #a90d29;
     }
   }
 }

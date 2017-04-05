@@ -6,8 +6,9 @@
 .bg-main {
   background: url("images/bg-main.png") no-repeat;
   background-size: cover;
-  height: 752px;
-  position: relative; }
+  height: 700px;
+  position: relative;
+  background-position: 0px 25px; }
   .bg-main .container-header {
     width: 100%;
     background-color: #f9f8f5;
@@ -84,7 +85,7 @@
         padding: 7px 0 0 15px; }
       .bg-main .container-header .row-my .div-form-wrapper {
         position: absolute;
-        right: 9%;
+        right: 2.5%;
         top: 100%; }
       .bg-main .container-header .row-my .form-my {
         border-left: 0;
@@ -95,7 +96,7 @@
         border: 1px solid #000;
         max-width: 130px;
         min-height: 25px;
-        margin-bottom: 5px; }
+        margin-bottom: 7px; }
         .bg-main .container-header .row-my .input-group-my .input-text {
           border-radius: 0px;
           box-shadow: 0 0;
@@ -149,9 +150,10 @@
         text-decoration: underline; }
       .bg-main .container-header .row-my .dropdown:hover > .dropdown-menu {
         display: block;
-        width: 101%;
+        width: 100%;
         position: absolute;
         top: 48px;
+        left: 2px;
         border-radius: 0px;
         box-shadow: 0 0;
         border: none;
@@ -175,11 +177,128 @@
         .bg-main .container-header .row-my .dropdown-1 a:hover, .bg-main .container-header .row-my .dropdown-2 a:hover {
           color: #00abbc;
           text-decoration: none; }
-
-.body {
-  width: 100%; }
+  .bg-main .text-on-bg {
+    margin: 183px 0 0 182px; }
+    .bg-main .text-on-bg .h-1-bg {
+      font-family: 'Lato Bold', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #0000; }
+    .bg-main .text-on-bg .h-2-bg {
+      font-family: "Lato Light", fantasy;
+      font-weight: 400;
+      font-size: 30px;
+      color: #f9f8f5; }
+    .bg-main .text-on-bg .text-1-bg {
+      font-family: 'Lato Light',sans-serif;
+      font-size: 13px;
+      color: #f9f8f5;
+      line-height: 24px;
+      padding: 23px 0 0 0; }
+    .bg-main .text-on-bg .text-2-bg {
+      font-family: 'Lato Bold',sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      color: #000;
+      text-indent: 58px;
+      padding: 17px 0 0 0; }
+    .bg-main .text-on-bg .button-bg-main {
+      font-family: 'Lato Light', sans-serif;
+      font-size: 11px;
+      color: #f9f8f5;
+      background-color: transparent;
+      border: 1px solid #f9f8f5;
+      min-height: 40px;
+      margin: 26px 0 0 3px;
+      width: 12.9%; }
+    .bg-main .text-on-bg .button-bg-main:hover {
+      background-color: #f9f8f5;
+      color: #a90d29; }
 
 .container-my {
   padding: 0 0 0 0; }
+
+.div-sprites {
+  background-color: #ededed;
+  text-align: -webkit-center; }
+  .div-sprites .mobly {
+    background: url("images/mobly.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .mobly:hover {
+    background: url("images/mobly-hover.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .marabaz {
+    background: url("images/marab.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .marabaz:hover {
+    background: url("images/marab-hover.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .arezzo {
+    background: url("images/arezzo.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .arezzo:hover {
+    background: url("images/arezzo-hover.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .vivara {
+    background: url("images/vivara.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .aquestir {
+    background: url("images/ovestir.png") 0 no-repeat;
+    margin: 8px 80px 0 40px; }
+  .div-sprites .staples {
+    background: url("images/staples.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .staples:hover {
+    background: url("images/staples-hover.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .farma {
+    background: url("images/ultra.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .farma:hover {
+    background: url("images/ultra-hover.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .fast {
+    background: url("images/fast.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .fast:hover {
+    background: url("images/fast-hover.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .xiomi {
+    background: url("images/xiomi.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .xiomi:hover {
+    background: url("images/xiomi-hover.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .enjoei {
+    background: url("images/enjoi.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .enjoei:hover {
+    background: url("images/enjoi-hover.png") 0 no-repeat;
+    margin: 28px 80px 0 40px; }
+  .div-sprites .icon {
+    height: 95px;
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle; }
+  .div-sprites .icon:hover {
+    background-repeat: no-repeat; }
+  .div-sprites .text-sprites {
+    font-family: 'Lato Light', sans-serif;
+    font-size: 12px;
+    color: #bbbbbb;
+    margin: 50px 0 30px 0; }
+
+.block-squares {
+  text-align: center; }
+  .block-squares .text-h {
+    font-family: 'Lato Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #444242; }
+  .block-squares .text {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 14px;
+    color: #444242; }
 
 /*# sourceMappingURL=style.css.map */
