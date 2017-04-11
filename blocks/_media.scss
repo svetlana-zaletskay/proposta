@@ -1,0 +1,96 @@
+@mixin marginSq{
+  margin: 10px 0 10px 0;
+}
+@media(max-width: 1200px) {
+  .block-squares {
+    .div-squares {
+      .second {
+        .sq-4 {
+          margin: 0 0 0 110px;
+        }
+        .sq-5 {
+          text-align: center;
+          margin-left: -9px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .block-squares {
+    .div-squares {
+      .sq-2{
+        left: -68px;
+      }
+      .second {
+        .sq-4 {
+          margin-left: 75px;
+        }
+        .sq-5 {
+          margin-left: 52px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .block-squares {
+    .div-squares {
+      .sq-2{
+        text-align: -webkit-left;
+        bottom: 0;
+        left: 0;
+      }
+      .second {
+        .sq-3 {
+          margin: 0 0 0 0;
+          text-align: -webkit-center;
+        }
+        .sq-4 {
+          margin: 0 0 0 0;
+          top: 0;
+          text-align: -webkit-right;
+        }
+        .sq-5 {
+          margin: 0 0 0 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .block-squares {
+    .div-squares {
+      margin-top: 4%;
+      .sq-1 {
+        text-align: -webkit-center;
+        @include marginSq;
+      }
+      .sq-2 {
+        text-align: -webkit-center;
+        bottom: 0;
+        left: 0;
+        @include marginSq;
+      }
+      .second {
+        .sq-3 {
+          text-align: -webkit-center;
+          @include marginSq;
+        }
+        .sq-4 {
+          text-align: -webkit-center;
+          @include marginSq;
+          top: 0;
+        }
+        .sq-5 {
+          @include marginSq;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,82 @@
+@mixin positionAbsolute {
+  position: absolute;
+}
+
+.arrow {
+  margin: 52px 0 38px 0;
+}
+
 .block-squares {
   text-align: center;
   .text-h {
     font-family: 'Lato Bold', sans-serif;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 700;
     color: #444242;
+    margin: 0 0 21px 0;
   }
   .text {
     font-family: "Lato Regular", sans-serif;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
     color: #444242;
   }
+  .text-h2 {
+    font-family: 'Dacota';
+  }
+  .div-squares {
+    margin-top: 8%;
+    .sq-1 {
+      text-align: right
+    }
+    .sq-2 {
+      bottom: 35px;
+      left: 135px;
+    }
+    .second {
+      margin-bottom: 80px;
+      .sq-3 {
+        text-align: -webkit-right;
+        margin-left: 55px;
+      }
+      .sq-4 {
+        text-align: -webkit-center;
+        margin-left: 136px;
+        top: -35px;
+      }
+      .sq-5 {
+        text-align: -webkit-left;
+        width: 25%;
+        right: 19px;
+        bottom: -63px;
+      }
+    }
+  }
 }
+
+//  .sq-1 {
+//    @include positionAbsolute;
+//    top: 9.3%;
+//    left: 29.6%;
+//  }
+//  .sq-2 {
+//    @include positionAbsolute;
+//    top: 0%;
+//    right: 27%;
+//  }
+//  .sq-3 {
+//    @include positionAbsolute;
+//    top: 47%;
+//    left: 17%;
+//  }
+//  .sq-4 {
+//    @include positionAbsolute;
+//    top: 39.7%;
+//    left: 44.5%;
+//
+//  }
+//  .sq-5 {
+//    @include positionAbsolute;
+//    top: 56.6%;
+//    right: 25.2%;
+//  }
