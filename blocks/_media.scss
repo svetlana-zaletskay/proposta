@@ -19,15 +19,20 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .block-squares {
     .div-squares {
-      .sq-2{
-        left: -68px;
-      }
-      .second {
-        .sq-4 {
-          margin-left: 75px;
+      .row {
+        .sq-2 {
+          left: -68px;
         }
-        .sq-5 {
-          margin-left: 52px;
+        .second {
+          .sq-3{
+            margin: 0 0 0 110px;
+          }
+          .sq-4 {
+            margin-left: 146px;
+          }
+          .sq-5 {
+            margin-left: 59px;
+          }
         }
       }
     }
@@ -36,25 +41,34 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .block-squares {
     .div-squares {
-      .sq-2{
-        text-align: -webkit-left;
-        bottom: 0;
-        left: 0;
-      }
-      .second {
-        .sq-3 {
-          margin: 0 0 0 0;
-          text-align: -webkit-center;
-        }
-        .sq-4 {
-          margin: 0 0 0 0;
-          top: 0;
-          text-align: -webkit-right;
-        }
-        .sq-5 {
-          margin: 0 0 0 0;
-          right: 0;
+      .row {
+        .sq-2 {
+          text-align: -webkit-left;
           bottom: 0;
+          left: 0;
+        }
+        .enext-em{
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        .second {
+          .sq-3 {
+            float: none;
+            margin: 20px auto;
+            text-align: -webkit-center;
+          }
+          .sq-4 {
+            margin: 0 0 0 0;
+            top: 0;
+            text-align: -webkit-right;
+          }
+          .sq-5 {
+            margin: 0 0 0 0;
+            right: 0;
+            bottom: 0;
+            width: 50%;
+          }
         }
       }
     }
@@ -64,31 +78,42 @@
   .block-squares {
     .div-squares {
       margin-top: 4%;
-      .sq-1 {
-        text-align: -webkit-center;
-        @include marginSq;
-      }
-      .sq-2 {
-        text-align: -webkit-center;
-        bottom: 0;
-        left: 0;
-        @include marginSq;
-      }
-      .second {
-        .sq-3 {
+      .row {
+        .sq-1 {
           text-align: -webkit-center;
           @include marginSq;
         }
-        .sq-4 {
+        .sq-2 {
           text-align: -webkit-center;
-          @include marginSq;
-          top: 0;
-        }
-        .sq-5 {
-          @include marginSq;
-          right: 0;
           bottom: 0;
-          width: 100%;
+          left: 0;
+          @include marginSq;
+        }
+        .enext-em{
+          position: relative;
+          left: 0;
+        }
+        .second {
+          .sq-3 {
+            text-align: -webkit-center;
+            @include marginSq;
+            margin: 10px auto;
+            float: none;
+            width: 199px;
+          }
+          .sq-4 {
+            text-align: -webkit-center;
+            @include marginSq;
+            top: 0;
+          }
+          .sq-5 {
+            @include marginSq;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: -webkit-center;
+
+          }
         }
       }
     }

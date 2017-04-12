@@ -1,0 +1,23 @@
+@mixin styleH {
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #00abbc;
+}
+
+@mixin styleLink {
+  font-family: "Lato Bold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #444242;
+}
+
+h {
+  @include styleH;
+}
+
+.div-list {
+  .link {
+    @include styleLink;
+  }
+}
