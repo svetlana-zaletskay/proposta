@@ -1,23 +1,142 @@
 @mixin styleH {
   font-family: 'Lato Bold', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #00abbc;
 }
 
 @mixin styleLink {
-  font-family: "Lato Bold", sans-serif;
-  font-size: 13px;
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 11px;
   font-weight: 700;
   color: #444242;
+}
+
+@mixin alignSprite {
+  vertical-align: -webkit-baseline-middle;
+  margin: 0 6.5px 0 6.5px;
+}
+
+@mixin borderHover {
+  border-radius: 50% 50%;
+  text-align: center;
+}
+
+footer {
+  background-color: #ededed;
+}
+
+.container-footer {
+  float: none;
+  padding: 52px 0 60px 25px;
 }
 
 h {
   @include styleH;
 }
 
+.div-list:nth-child(5) {
+  height: 181px;;
+}
+
+.div-list:before {
+  content: '';
+  width: 25px;
+  height: 5px;
+  background-color: #444242;
+  position: absolute;
+  top: -15px;
+}
+
+.div-list-content {
+  padding: 20px 0 0 0;
+}
+
+.div-list-content:before {
+  content: '';
+  width: auto;
+  height: auto;
+}
+
 .div-list {
+  padding: 0 0 0 70px;
+  .div-collapse {
+    padding: 0 0;
+  }
+  li {
+    list-style-type: none;
+    //float: none;
+  }
   .link {
     @include styleLink;
+    padding: 0 0 0 0;
+  }
+  .h-2 {
+    @include styleLink;
+    font-size: 11px;
+  }
+  .link-adress {
+    @include styleLink;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .link-telephone {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .div-small-sprites {
+    margin: 19px 0 0 0;
+    .fa:hover {
+      @include borderHover;
+      border: 2px solid #00abbc
+    }
+    .fa {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #ededed;
+      @include borderHover;
+    }
+    .fa-twitter:before {
+      color: #9e9e9e;
+      @include alignSprite;
+    }
+    .fa-facebook:before {
+      color: #7d7d7d;
+      @include alignSprite;
+    }
+    .fa-linkedin:before {
+      color: #a9a9a9;
+      @include alignSprite;
+    }
+    .fa-wordpress:before {
+      color: #a6a6a6;
+      @include alignSprite;
+    }
+  }
+}
+
+.div-list:nth-child(3) {
+  padding: 0 0 0 56px;
+}
+
+.div-list-second {
+  margin: 20px 0 0 0;
+  padding: 0 0 0 0;
+  .div-list-content {
+    padding: 20px 0 0 0;
+  }
+}
+
+.after-footer {
+  background-color: #444242;
+  text-align: -webkit-center;
+  .col-lg-4 {
+    margin: 30px 0 25px 0;
+    img {
+      border-radius: 7px;
+    }
+  }
+  .col-lg-4:nth-child(3) {
+    margin: 20px 0 20px 0;
   }
 }

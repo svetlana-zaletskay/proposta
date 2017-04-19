@@ -1,92 +1,95 @@
-.div-sprites{
+.div-sprites {
   background-color: #ededed;
   text-align: -webkit-center;
-  .mobly{
+  padding: 23px 0 0 0;
+  .mobly {
     background: url('images/mobly.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .mobly:hover{
+  .mobly:hover {
     background: url('images/mobly-hover.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .marabaz{
+  .marabaz {
     background: url('images/marab.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .marabaz:hover{
+  .marabaz:hover {
     background: url('images/marab-hover.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .arezzo{
+  .arezzo {
     background: url('images/arezzo.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .arezzo:hover{
+  .arezzo:hover {
     background: url('images/arezzo-hover.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .vivara{
+  .vivara {
     background: url('images/vivara.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .aquestir{
+  .aquestir {
     background: url('images/ovestir.png') 0 no-repeat;
     margin: 8px 80px 0 40px;
   }
-  .staples{
+  .staples {
     background: url('images/staples.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .staples:hover{
+  .staples:hover {
     background: url('images/staples-hover.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .farma{
+  .farma {
     background: url('images/ultra.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .farma:hover{
+  .farma:hover {
     background: url('images/ultra-hover.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .fast{
+  .fast {
     background: url('images/fast.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .fast:hover{
+  .fast:hover {
     background: url('images/fast-hover.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .xiomi{
+  .xiomi {
     background: url('images/xiomi.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .xiomi:hover{
+  .xiomi:hover {
     background: url('images/xiomi-hover.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .enjoei{
+  .enjoei {
     background: url('images/enjoi.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .enjoei:hover{
+  .enjoei:hover {
     background: url('images/enjoi-hover.png') 0 no-repeat;
     margin: 28px 80px 0 40px;
   }
-  .icon{
+  .icon {
     height: 95px;
     width: 140px;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
   }
-  .icon:hover{
+  .icon:hover {
     background-repeat: no-repeat;
   }
-  .text-sprites{
-    font-family: 'Lato Light', sans-serif;
-    font-size: 12px;
-    color:#bbbbbb;
+  .text-sprites {
     margin: 50px 0 30px 0;
+    a {
+      font-family: 'Lato Light', sans-serif;
+      font-size: 12px;
+      color: #bbbbbb;
+    }
   }
 }
