@@ -23,6 +23,20 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .bg-main{
+    background-position: 0px 0px;
+    .text-on-bg{
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center;
+      .text-1-bg{
+        font-size: 10px;
+      }
+      .text-2-bg{
+        text-indent: 0;
+      }
+    }
+  }
   .block-squares {
     .div-squares {
       .row {
@@ -69,8 +83,24 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .bg-main{
+    background-position: 0px 0px;
+    height: 550px;
+    .text-on-bg{
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center;
+      .text-1-bg{
+        font-size: 10px;
+      }
+      .text-2-bg{
+        text-indent: 0;
+      }
+    }
+  }
   .block-squares {
     .div-squares {
+      margin-top:2%;
       .row {
         .sq-2 {
           text-align: -webkit-left;
@@ -83,6 +113,7 @@
           left: 0;
         }
         .second {
+          margin-bottom: 10px;
           .sq-3 {
             float: none;
             margin: 20px auto;
@@ -129,6 +160,20 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .bg-main{
+    background-position: 0px 0px;
+    .text-on-bg{
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center;
+      .text-1-bg{
+        font-size: 10px;
+      }
+      .text-2-bg{
+        text-indent: 0;
+      }
+    }
+  }
   .block-squares {
     .div-squares {
       margin-top: 4%;
@@ -148,6 +193,7 @@
           left: 0;
         }
         .second {
+          margin-bottom: 0;
           .sq-3 {
             text-align: -webkit-center;
             @include marginSq;

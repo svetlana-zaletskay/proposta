@@ -1,9 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proposta</title>
 
@@ -11,20 +10,31 @@
     <link rel="stylesheet" href="style.css">
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
 </head>
+<body>
 <div class="container-fluid container-my">
     <header>
         <div class="wrapper">
-            <div class="bg-main">
-                <div class="container container-header">
-                    <div class="row row-my">
-                        <a href="#" class="col-lg-2 logo"><img src="images/img-logo.png" width="72" height="24"
-                                                               alt="logo"/></a>
-                        <ul class="nav navbar-nav nav-my col-lg-10">
-                            <li class="dropdown dropdown-my"><a href="#" data-toggle="dropdown"
-                                                                class="dropdown-toggle menu-link1">O que fazemos<b
-                                    class="caret"></b>
+            <div class="container container-header">
+                <div class="row row-my">
+                    <a href="#" class="col-lg-2 logo"><img src="images/img-logo.png" width="72" height="24"
+                                                           alt="logo"/></a>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown dropdown-my ">
+                                <a href="#" class="dropdown-toggle menu-link1 menu-link3" data-toggle="dropdown">O qua
+                                    faremos<b
+                                            class="caret"></b>
+                                </a>
                                 <div class="arrow">&#9660</div>
-                            </a>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <ul class="dropdown-1">
@@ -47,10 +57,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown dropdown-my">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-link1 menu-link2">Clientes
+                                <a href="#" class="dropdown-toggle menu-link1 menu-link3" data-toggle="dropdown">Clientes
                                     <b class="caret"></b>
-                                    <div class="arrow">&#9660</div>
                                 </a>
+                                <div class="arrow">&#9660</div>
                                 <ul class="dropdown-menu">
                                     <li>
                                         <ul class="dropdown-1">
@@ -163,25 +173,25 @@
                                 <a href="#" data-toggle="dropdown" class="dropdown-toggle menu-link1">Dashboard</a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <div class="col-lg-2 div-form-wrapper">
+                                        <div class="div-form-wrapper">
                                             <div class="panel">
                                                 <div class="panel-body">
                                                     <div class="row">
-                                                        <div class="col-lg-10 login-box">
+                                                        <div class="login-box">
                                                             <form role="form form-my">
                                                                 <div class="input-group input-group-my">
-                                                <span class="input-group-addon input-group-addon-my">
-                                                    <span class="glyphicon glyphicon-user glyphicon-user-my"></span>
-                                                    </span>
+                                                                     <span class="input-group-addon input-group-addon-my">
+                                                                        <span class="glyphicon glyphicon-user glyphicon-user-my"></span>
+                                                                    </span>
                                                                     <input type="text"
                                                                            class="form-control input-text"
                                                                            placeholder="Usuário" required
-                                                                           autofocus/>
+                                                                           autofocus>
                                                                 </div>
                                                                 <div class="input-group input-group-my">
-                                                <span class="input-group-addon input-group-addon-my">
-                                                    <span class="glyphicon glyphicon-lock glyphicon-lock-my"></span>
-                                                </span>
+                                                                    <span class="input-group-addon input-group-addon-my">
+                                                                        <span class="glyphicon glyphicon-lock glyphicon-lock-my"></span>
+                                                                    </span>
                                                                     <input type="password"
                                                                            class="form-control input-text"
                                                                            placeholder="Senha" required/>
@@ -193,9 +203,9 @@
                                                                                 class="">Lembre-me?</label>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-lg-6 div-link-form"><a href="#"
-                                                                                                       class="link-form">Esqueci
-                                                                    a senha</a></div>
+                                                                <div class="col-lg-6 div-link-form">
+                                                                    <a href="#" class="link-form">Esqueci a senha</a>
+                                                                </div>
                                                                 <div class="div-button-acesso">
                                                                     <button type="button"
                                                                             class="btn btn-labeled btn-success button-acesso">
@@ -209,7 +219,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </li>
@@ -218,10 +227,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="text-on-bg">
-                    <div class="h-1-bg">CASE</div>
-                    <div class="h-2-bg">SCHUTZ</div>
-                    <div class="text-1-bg">
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="bg-main">
+    <div class="text-on-bg">
+        <div class="h-1-bg">CASE</div>
+        <div class="h-2-bg">SCHUTZ</div>
+        <div class="text-1-bg">
                         <span>“A Schutz é uma das principais parceiras de conteúdo<br> do portal E-Commerce Brasil.
                         Por meio dos textos do<br> Felipe Martins, que alimentam a coluna dele no Blog do<br> portal,
                         os empreendedores e candidatos a empresários<br> do e-commerce podem tirar as suas dúvidas sobre<br>
@@ -229,15 +244,12 @@
                         aumentando
                         as <br>chances de obter sucesso no mercado digital brasileiro.”
                     </span>
-                    </div>
-
-                    <div class="text-2-bg"><p>- Maurício Bastos, gerente de e-commerce do grupo Arezzo </p></div>
-
-                    <button type="button" class="button-bg-main"><span>VER CASE</span></button>
-                </div>
-            </div>
         </div>
-    </header>
+
+        <div class="text-2-bg"><p>- Maurício Bastos, gerente de e-commerce do grupo Arezzo </p></div>
+
+        <button type="button" class="button-bg-main"><span>VER CASE</span></button>
+    </div>
 </div>
 <div class="container-fluid">
     <div class="row div-sprites">
@@ -300,7 +312,7 @@
     </div>
 </main>
 <footer>
-    <div class="container-fluid container-footer cl-xs-12 col-sm-12 col-lg-8">
+    <div class="container-fluid container-footer">
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 div-list">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">

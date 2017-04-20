@@ -2,12 +2,9 @@
   position: absolute;
 }
 
-.arrow {
-  margin: 52px 0 47px 0;
-}
-
 .block-squares {
   text-align: center;
+  padding-top: 50px;
   .text-h {
     font-family: 'Lato Bold', sans-serif;
     font-size: 23px;
@@ -23,6 +20,9 @@
   }
   .text-h2 {
     font-family: 'Dacota';
+  }
+  .text-block-squares{
+    padding-top: 40px;
   }
   .div-squares {
     margin-top: 8%;

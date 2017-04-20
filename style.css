@@ -2,41 +2,35 @@
 @import url(css/bootstrap.css);
 .wrapper {
   width: 100%; }
-
-.bg-main {
-  background: url("images/bg-main.png") no-repeat;
-  background-size: cover;
-  height: 750px;
-  position: relative;
-  background-position: 0px 25px; }
-  .bg-main .container-header {
+  .wrapper .container-header {
     width: 100%;
     background-color: #f9f8f5;
     line-height: 2.4em; }
-    .bg-main .container-header .row-my {
+    .wrapper .container-header .row-my {
       margin-left: 16px; }
-      .bg-main .container-header .row-my .logo {
+      .wrapper .container-header .row-my .logo {
         text-align: right;
         padding: 10px 0 0 10px;
         float: left; }
-      .bg-main .container-header .row-my .nav-my {
+      .wrapper .container-header .row-my .navbar-nav {
         position: static; }
-        .bg-main .container-header .row-my .nav-my .dropdown-my, .bg-main .container-header .row-my .nav-my .dropdown-form {
-          position: static;
-          bacground-color: #f9f8f5; }
-      .bg-main .container-header .row-my .menu-link1:hover {
+        .wrapper .container-header .row-my .navbar-nav .dropdown-my, .wrapper .container-header .row-my .navbar-nav .dropdown-form {
+          position: static; }
+          .wrapper .container-header .row-my .navbar-nav .dropdown-my .dropdown-menu, .wrapper .container-header .row-my .navbar-nav .dropdown-form .dropdown-menu {
+            padding: 0 0 0 0; }
+      .wrapper .container-header .row-my .menu-link1:hover {
         color: #f9f8f5;
         background-color: #00abbc;
         border-radius: 0px; }
-      .bg-main .container-header .row-my .arrow {
+      .wrapper .container-header .row-my .arrow {
         color: #f9f8f5;
         position: absolute; }
-      .bg-main .container-header .row-my .menu-link1:hover > .arrow {
+      .wrapper .container-header .row-my .menu-link1:hover > .arrow {
         color: #00abbc;
         position: absolute;
         top: 13px;
         left: 48px; }
-      .bg-main .container-header .row-my .menu-link1 {
+      .wrapper .container-header .row-my .menu-link1 {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 11px;
@@ -46,9 +40,9 @@
         padding: 0 12px 0 12px;
         margin: 8px -6px 8px 13px;
         position: relative; }
-      .bg-main .container-header .row-my .menu-link2:hover > .arrow {
+      .wrapper .container-header .row-my .menu-link2:hover > .arrow {
         left: 33px; }
-      .bg-main .container-header .row-my .menu-link2 {
+      .wrapper .container-header .row-my .menu-link2 {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 11px;
@@ -58,46 +52,51 @@
         padding: 0 12px 0 12px;
         margin: 8px -6px 8px 13px;
         position: relative; }
-      .bg-main .container-header .row-my .menu-link3:hover > .arrow, .bg-main .container-header .row-my .menu-link4:hover > .arrow {
+      .wrapper .container-header .row-my .menu-link3:hover > .arrow, .wrapper .container-header .row-my .menu-link4:hover > .arrow {
         left: 28px; }
-      .bg-main .container-header .row-my .telephone-link {
+      .wrapper .container-header .row-my .telephone-link {
         margin-left: 95px; }
-      .bg-main .container-header .row-my .li-blue {
+      .wrapper .container-header .row-my .li-blue {
         margin: -6px 14px 2px 22px;
         background-color: #f9f8f5; }
-      .bg-main .container-header .row-my .border {
+      .wrapper .container-header .row-my .border {
         border: 1px solid #00abbc;
         border-radius: 0;
         color: #00abbc;
         padding: 5px 7px 5px 8px; }
-      .bg-main .container-header .row-my ul {
+      .wrapper .container-header .row-my ul {
         padding-top: 9px;
         margin: 0 0 0 -2px; }
-      .bg-main .container-header .row-my .login-box {
+      .wrapper .container-header .row-my .login-box {
         padding: 0%; }
-      .bg-main .container-header .row-my .panel {
-        padding-left: 16px;
+      .wrapper .container-header .row-my .panel {
         bacground-color: #f9f8f5;
-        border-radius: 0; }
-      .bg-main .container-header .row-my .panel-body {
+        border-radius: 0;
+        background-color: #f9f8f5;
+        margin-bottom: 0; }
+      .wrapper .container-header .row-my .panel-body {
         text-align: -webkit-center;
         margin: 0;
-        padding: 7px 0 0 15px; }
-      .bg-main .container-header .row-my .div-form-wrapper {
+        padding: 7px 0 0 0;
+        background-color: #f9f8f5; }
+      .wrapper .container-header .row-my .div-form-wrapper {
         position: absolute;
         right: 2.5%;
-        top: 100%; }
-      .bg-main .container-header .row-my .form-my {
+        background-color: #f9f8f5;
+        padding-top: 15px;
+        min-width: 187px;
+        margin-right: 91px; }
+      .wrapper .container-header .row-my .form-my {
         border-left: 0;
         border-radius: 0px;
         box-shadow: 0 0;
         border: none; }
-      .bg-main .container-header .row-my .input-group-my {
+      .wrapper .container-header .row-my .input-group-my {
         border: 1px solid #000;
         max-width: 130px;
         min-height: 25px;
         margin-bottom: 7px; }
-        .bg-main .container-header .row-my .input-group-my .input-text {
+        .wrapper .container-header .row-my .input-group-my .input-text {
           border-radius: 0px;
           box-shadow: 0 0;
           border: none;
@@ -105,80 +104,90 @@
           height: 23px;
           font-family: Lato Regular;
           font-size: 11px; }
-        .bg-main .container-header .row-my .input-group-my .input-group-addon-my {
+        .wrapper .container-header .row-my .input-group-my .input-group-addon-my {
           border-right: 0;
           background-color: white;
           padding: 0 5px 0 6px;
           border-radius: 0px;
           box-shadow: 0 0;
           border: none; }
-          .bg-main .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-user-my, .bg-main .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-lock-my {
+          .wrapper .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-user-my, .wrapper .container-header .row-my .input-group-my .input-group-addon-my .glyphicon-lock-my {
             border: none;
             color: #747070; }
-      .bg-main .container-header .row-my .div-button-acesso {
+      .wrapper .container-header .row-my .div-button-acesso {
         text-align: center;
         width: 60%; }
-      .bg-main .container-header .row-my .checkbox-div {
+      .wrapper .container-header .row-my .checkbox-div {
         padding: 0;
         line-height: 1.7em;
         display: inline-block;
         text-align: -webkit-right; }
-      .bg-main .container-header .row-my .div-link-form {
+      .wrapper .container-header .row-my .div-link-form {
         display: inline-block;
         padding: 0 0 0 0px;
         line-height: 1.4em; }
-      .bg-main .container-header .row-my .checkbox-my, .bg-main .container-header .row-my .link-form {
+      .wrapper .container-header .row-my .checkbox-my, .wrapper .container-header .row-my .link-form {
         color: #504b4b;
         font-family: 'Lato lightItalic', sans-serif;
         font-size: 8px;
         margin: 0; }
-      .bg-main .container-header .row-my .link-form {
+      .wrapper .container-header .row-my .link-form {
         text-decoration: underline; }
-      .bg-main .container-header .row-my .button-acesso {
+      .wrapper .container-header .row-my .button-acesso {
         background-color: #00abbc;
         border: none;
         border-radius: 0px;
         width: 100%;
         min-height: 25px;
         padding: 0; }
-      .bg-main .container-header .row-my .link-check-in {
+      .wrapper .container-header .row-my .link-check-in {
         font-family: "Lato lightItalic", sans-serif;
         font-size: 8px;
         color: #00abbc;
         padding: 0;
         text-align: center;
         text-decoration: underline; }
-      .bg-main .container-header .row-my .dropdown:hover > .dropdown-menu {
+      .wrapper .container-header .row-my .dropdown:hover > .dropdown-menu {
         display: block;
         width: 100%;
         position: absolute;
-        top: 48px;
+        top: 54px;
         left: 2px;
         border-radius: 0px;
         box-shadow: 0 0;
         border: none;
         background-color: #f9f8f5;
         padding-left: 13%; }
-      .bg-main .container-header .row-my .dropdown-1, .bg-main .container-header .row-my .dropdown-2 {
+      .wrapper .container-header .row-my .dropdown-1, .wrapper .container-header .row-my .dropdown-2 {
         display: inline-block;
         list-style-type: none;
         padding-right: 5%;
         border-right: 1px solid #dbdbdb; }
-        .bg-main .container-header .row-my .dropdown-1 .h-list, .bg-main .container-header .row-my .dropdown-2 .h-list {
+        .wrapper .container-header .row-my .dropdown-1 .h-list, .wrapper .container-header .row-my .dropdown-2 .h-list {
           font-size: 18px;
           font-weight: 700;
           padding-bottom: 15%; }
-        .bg-main .container-header .row-my .dropdown-1 a, .bg-main .container-header .row-my .dropdown-2 a {
+        .wrapper .container-header .row-my .dropdown-1 a, .wrapper .container-header .row-my .dropdown-2 a {
           font-family: 'Lato', sans-serif;
           font-weight: 400;
           font-size: 12px;
           text-decoration: none;
           color: #494748; }
-        .bg-main .container-header .row-my .dropdown-1 a:hover, .bg-main .container-header .row-my .dropdown-2 a:hover {
+        .wrapper .container-header .row-my .dropdown-1 a:hover, .wrapper .container-header .row-my .dropdown-2 a:hover {
           color: #00abbc;
           text-decoration: none; }
+
+.bg-main {
+  background: url("images/bg-main.png") no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+  background-position: 0px -50px; }
   .bg-main .text-on-bg {
-    margin: 183px 0 0 182px; }
+    margin: 0 0 0 0;
+    position: absolute;
+    top: 185px;
+    left: 185px; }
     .bg-main .text-on-bg .h-1-bg {
       font-family: 'Lato Bold', sans-serif;
       font-weight: 700;
@@ -210,7 +219,7 @@
       border: 1px solid #f9f8f5;
       min-height: 40px;
       margin: 26px 0 0 3px;
-      width: 12.9%; }
+      width: 42%; }
     .bg-main .text-on-bg .button-bg-main:hover {
       background-color: #f9f8f5;
       color: #a90d29; }
@@ -291,11 +300,9 @@
       font-size: 12px;
       color: #bbbbbb; }
 
-.arrow {
-  margin: 52px 0 47px 0; }
-
 .block-squares {
-  text-align: center; }
+  text-align: center;
+  padding-top: 50px; }
   .block-squares .text-h {
     font-family: 'Lato Bold', sans-serif;
     font-size: 23px;
@@ -309,6 +316,8 @@
     color: #444242; }
   .block-squares .text-h2 {
     font-family: 'Dacota'; }
+  .block-squares .text-block-squares {
+    padding-top: 40px; }
   .block-squares .div-squares {
     margin-top: 8%; }
     .block-squares .div-squares .row {
@@ -377,6 +386,17 @@
     text-align: center;
     margin-left: -9px; } }
 @media (min-width: 992px) and (max-width: 1199px) {
+  .bg-main {
+    background-position: 0px 0px; }
+    .bg-main .text-on-bg {
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center; }
+      .bg-main .text-on-bg .text-1-bg {
+        font-size: 10px; }
+      .bg-main .text-on-bg .text-2-bg {
+        text-indent: 0; }
+
   .block-squares .div-squares .row .sq-2 {
     left: -68px; }
   .block-squares .div-squares .row .second .sq-3 {
@@ -402,27 +422,43 @@
       footer .container-footer .div-list-second .div-list-content {
         padding: 20px 0 0 40px; } }
 @media (min-width: 768px) and (max-width: 991px) {
-  .block-squares .div-squares .row .sq-2 {
-    text-align: -webkit-left;
-    bottom: 0;
-    left: 0; }
-  .block-squares .div-squares .row .enext-em {
-    position: relative;
-    top: 0;
-    left: 0; }
-  .block-squares .div-squares .row .second .sq-3 {
-    float: none;
-    margin: 20px auto;
-    text-align: -webkit-center; }
-  .block-squares .div-squares .row .second .sq-4 {
-    margin: 0 0 0 0;
-    top: 0;
-    text-align: -webkit-right; }
-  .block-squares .div-squares .row .second .sq-5 {
-    margin: 0 0 0 0;
-    right: 0;
-    bottom: 0;
-    width: 50%; }
+  .bg-main {
+    background-position: 0px 0px;
+    height: 550px; }
+    .bg-main .text-on-bg {
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center; }
+      .bg-main .text-on-bg .text-1-bg {
+        font-size: 10px; }
+      .bg-main .text-on-bg .text-2-bg {
+        text-indent: 0; }
+
+  .block-squares .div-squares {
+    margin-top: 2%; }
+    .block-squares .div-squares .row .sq-2 {
+      text-align: -webkit-left;
+      bottom: 0;
+      left: 0; }
+    .block-squares .div-squares .row .enext-em {
+      position: relative;
+      top: 0;
+      left: 0; }
+    .block-squares .div-squares .row .second {
+      margin-bottom: 10px; }
+      .block-squares .div-squares .row .second .sq-3 {
+        float: none;
+        margin: 20px auto;
+        text-align: -webkit-center; }
+      .block-squares .div-squares .row .second .sq-4 {
+        margin: 0 0 0 0;
+        top: 0;
+        text-align: -webkit-right; }
+      .block-squares .div-squares .row .second .sq-5 {
+        margin: 0 0 0 0;
+        right: 0;
+        bottom: 0;
+        width: 50%; }
 
   .div-sprites {
     text-align: -webkit-center; }
@@ -440,6 +476,17 @@
       footer .container-footer .div-list-second .div-list-content {
         padding: 20px 0 0 25px; } }
 @media (min-width: 320px) and (max-width: 767px) {
+  .bg-main {
+    background-position: 0px 0px; }
+    .bg-main .text-on-bg {
+      top: 130px;
+      left: 20px;
+      text-align: -webkit-center; }
+      .bg-main .text-on-bg .text-1-bg {
+        font-size: 10px; }
+      .bg-main .text-on-bg .text-2-bg {
+        text-indent: 0; }
+
   .block-squares .div-squares {
     margin-top: 4%; }
     .block-squares .div-squares .row .sq-1 {
@@ -453,22 +500,24 @@
     .block-squares .div-squares .row .enext-em {
       position: relative;
       left: 0; }
-    .block-squares .div-squares .row .second .sq-3 {
-      text-align: -webkit-center;
-      margin: 10px 0 10px 0;
-      margin: 10px auto;
-      float: none;
-      width: 199px; }
-    .block-squares .div-squares .row .second .sq-4 {
-      text-align: -webkit-center;
-      margin: 10px 0 10px 0;
-      top: 0; }
-    .block-squares .div-squares .row .second .sq-5 {
-      margin: 10px 0 10px 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      text-align: -webkit-center; }
+    .block-squares .div-squares .row .second {
+      margin-bottom: 0; }
+      .block-squares .div-squares .row .second .sq-3 {
+        text-align: -webkit-center;
+        margin: 10px 0 10px 0;
+        margin: 10px auto;
+        float: none;
+        width: 199px; }
+      .block-squares .div-squares .row .second .sq-4 {
+        text-align: -webkit-center;
+        margin: 10px 0 10px 0;
+        top: 0; }
+      .block-squares .div-squares .row .second .sq-5 {
+        margin: 10px 0 10px 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: -webkit-center; }
 
   .div-sprites {
     text-align: -webkit-center; }
