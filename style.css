@@ -15,7 +15,8 @@
       .wrapper .container-header .row-my .navbar-nav {
         position: static; }
         .wrapper .container-header .row-my .navbar-nav .dropdown-my, .wrapper .container-header .row-my .navbar-nav .dropdown-form {
-          position: static; }
+          position: static;
+          height: 46px; }
           .wrapper .container-header .row-my .navbar-nav .dropdown-my .dropdown-menu, .wrapper .container-header .row-my .navbar-nav .dropdown-form .dropdown-menu {
             padding: 0 0 0 0; }
       .wrapper .container-header .row-my .menu-link1:hover {
@@ -25,11 +26,11 @@
       .wrapper .container-header .row-my .arrow {
         color: #f9f8f5;
         position: absolute; }
-      .wrapper .container-header .row-my .menu-link1:hover > .arrow {
+      .wrapper .container-header .row-my .menu-link1:hover > .arrow-1 {
         color: #00abbc;
         position: absolute;
         top: 13px;
-        left: 48px; }
+        left: 45px; }
       .wrapper .container-header .row-my .menu-link1 {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
@@ -40,8 +41,11 @@
         padding: 0 12px 0 12px;
         margin: 8px -6px 8px 13px;
         position: relative; }
-      .wrapper .container-header .row-my .menu-link2:hover > .arrow {
-        left: 33px; }
+      .wrapper .container-header .row-my .menu-link2:hover > .arrow-2 {
+        color: #00abbc;
+        position: absolute;
+        top: 13px;
+        left: 30px; }
       .wrapper .container-header .row-my .menu-link2 {
         font-family: 'Lato', sans-serif;
         font-weight: 400;
@@ -52,8 +56,16 @@
         padding: 0 12px 0 12px;
         margin: 8px -6px 8px 13px;
         position: relative; }
-      .wrapper .container-header .row-my .menu-link3:hover > .arrow, .wrapper .container-header .row-my .menu-link4:hover > .arrow {
-        left: 28px; }
+      .wrapper .container-header .row-my .menu-link3:hover > .arrow-3, .wrapper .container-header .row-my .menu-link4:hover > .arrow-3 {
+        color: #00abbc;
+        position: absolute;
+        top: 13px;
+        left: 30px; }
+      .wrapper .container-header .row-my .menu-link5:hover > .arrow-5 {
+        color: #00abbc;
+        position: absolute;
+        top: 13px;
+        left: 55px; }
       .wrapper .container-header .row-my .telephone-link {
         margin-left: 95px; }
       .wrapper .container-header .row-my .li-blue {
@@ -70,10 +82,10 @@
       .wrapper .container-header .row-my .login-box {
         padding: 0%; }
       .wrapper .container-header .row-my .panel {
-        bacground-color: #f9f8f5;
         border-radius: 0;
         background-color: #f9f8f5;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        box-shadow: 0 0; }
       .wrapper .container-header .row-my .panel-body {
         text-align: -webkit-center;
         margin: 0;
@@ -102,7 +114,7 @@
           border: none;
           padding: 0;
           height: 23px;
-          font-family: Lato Regular;
+          font-family: Lato Regular,sans-serif;
           font-size: 11px; }
         .wrapper .container-header .row-my .input-group-my .input-group-addon-my {
           border-right: 0;
@@ -126,13 +138,39 @@
         display: inline-block;
         padding: 0 0 0 0px;
         line-height: 1.4em; }
-      .wrapper .container-header .row-my .checkbox-my, .wrapper .container-header .row-my .link-form {
-        color: #504b4b;
+      .wrapper .container-header .row-my .checkbox-my {
+        margin-right: -8px; }
+        .wrapper .container-header .row-my .checkbox-my .checkbox-none {
+          display: none; }
+        .wrapper .container-header .row-my .checkbox-my .checkbox-custom {
+          position: relative;
+          width: 13px;
+          height: 13px;
+          position: relative;
+          background-color: #e4e4e4; }
+        .wrapper .container-header .row-my .checkbox-my .checkbox-custom {
+          display: inline-block;
+          vertical-align: middle; }
+        .wrapper .container-header .row-my .checkbox-my .checkbox-none:checked + .checkbox-custom::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 1px;
+          left: 3px;
+          background: url(images/check.png) no-repeat;
+          width: 9px;
+          height: 10px; }
+        .wrapper .container-header .row-my .checkbox-my .label {
+          color: #6f6b6a;
+          font-family: 'Lato lightItalic', sans-serif;
+          font-size: 8px;
+          margin: 0; }
+      .wrapper .container-header .row-my .link-form {
+        text-decoration: underline;
+        color: #6f6b6a;
         font-family: 'Lato lightItalic', sans-serif;
         font-size: 8px;
         margin: 0; }
-      .wrapper .container-header .row-my .link-form {
-        text-decoration: underline; }
       .wrapper .container-header .row-my .button-acesso {
         background-color: #00abbc;
         border: none;
@@ -176,13 +214,47 @@
         .wrapper .container-header .row-my .dropdown-1 a:hover, .wrapper .container-header .row-my .dropdown-2 a:hover {
           color: #00abbc;
           text-decoration: none; }
+        .wrapper .container-header .row-my .dropdown-1 .link-last, .wrapper .container-header .row-my .dropdown-2 .link-last {
+          position: relative; }
+          .wrapper .container-header .row-my .dropdown-1 .link-last a, .wrapper .container-header .row-my .dropdown-2 .link-last a {
+            font-weight: 700; }
+          .wrapper .container-header .row-my .dropdown-1 .link-last a:before, .wrapper .container-header .row-my .dropdown-2 .link-last a:before {
+            content: '>';
+            color: #00abbc;
+            font-size: 15px;
+            position: absolute;
+            left: -10px; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
+.slick-proposta {
+  margin-bottom: 0; }
+  .slick-proposta .slick-prev {
+    left: 0;
+    display: none; }
+  .slick-proposta .slick-next {
+    right: 0;
+    display: none !important; }
+  .slick-proposta .slick-list {
+    height: 700px; }
+  .slick-proposta .slick-dots {
+    bottom: 20px;
+    width: 20%;
+    margin: 0 0 25px 110px; }
+    .slick-proposta .slick-dots li {
+      margin: 0; }
+      .slick-proposta .slick-dots li button {
+        padding: 0; }
+      .slick-proposta .slick-dots li button:before {
+        color: #ededed;
+        font-size: 4px; }
+
+.slick-dots li.slick-active button:before {
+  color: #ededed; }
 
 .bg-main {
-  background: url("images/bg-main.png") no-repeat;
-  background-size: cover;
-  height: 700px;
-  position: relative;
-  background-position: 0px -50px; }
+  position: relative; }
   .bg-main .text-on-bg {
     margin: 0 0 0 0;
     position: absolute;
@@ -194,18 +266,18 @@
       font-size: 15px;
       color: #0000; }
     .bg-main .text-on-bg .h-2-bg {
-      font-family: "Lato Light", fantasy;
+      font-family: 'Lato Light', fantasy;
       font-weight: 400;
       font-size: 30px;
       color: #f9f8f5; }
     .bg-main .text-on-bg .text-1-bg {
-      font-family: 'Lato Light',sans-serif;
+      font-family: 'Lato Light', sans-serif;
       font-size: 13px;
       color: #f9f8f5;
       line-height: 24px;
       padding: 23px 0 0 0; }
     .bg-main .text-on-bg .text-2-bg {
-      font-family: 'Lato Bold',sans-serif;
+      font-family: 'Lato Bold', sans-serif;
       font-size: 10px;
       font-weight: 700;
       color: #000;
@@ -231,68 +303,56 @@
   background-color: #ededed;
   text-align: -webkit-center;
   padding: 23px 0 0 0; }
-  .div-sprites .mobly {
-    background: url("images/mobly.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .mobly:hover {
-    background: url("images/mobly-hover.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .marabaz {
-    background: url("images/marab.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .marabaz:hover {
-    background: url("images/marab-hover.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .arezzo {
-    background: url("images/arezzo.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .arezzo:hover {
-    background: url("images/arezzo-hover.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .vivara {
-    background: url("images/vivara.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .aquestir {
-    background: url("images/ovestir.png") 0 no-repeat;
-    margin: 8px 80px 0 40px; }
-  .div-sprites .staples {
-    background: url("images/staples.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .staples:hover {
-    background: url("images/staples-hover.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .farma {
-    background: url("images/ultra.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .farma:hover {
-    background: url("images/ultra-hover.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .fast {
-    background: url("images/fast.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .fast:hover {
-    background: url("images/fast-hover.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .xiomi {
-    background: url("images/xiomi.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .xiomi:hover {
-    background: url("images/xiomi-hover.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .enjoei {
-    background: url("images/enjoi.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .enjoei:hover {
-    background: url("images/enjoi-hover.png") 0 no-repeat;
-    margin: 28px 80px 0 40px; }
-  .div-sprites .icon {
-    height: 95px;
-    width: 140px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle; }
-  .div-sprites .icon:hover {
-    background-repeat: no-repeat; }
+  .div-sprites .col {
+    text-align: -webkit-right; }
+    .div-sprites .col .mobly {
+      background: url("images/mobly.png") 0 no-repeat; }
+    .div-sprites .col .mobly:hover {
+      background: url("images/mobly-hover.png") 0 no-repeat; }
+    .div-sprites .col .marabaz {
+      background: url("images/marab.png") 0 no-repeat; }
+    .div-sprites .col .marabaz:hover {
+      background: url("images/marab-hover.png") 0 no-repeat; }
+    .div-sprites .col .arezzo {
+      background: url("images/arezzo.png") 0 no-repeat; }
+    .div-sprites .col .arezzo:hover {
+      background: url("images/arezzo-hover.png") 0 no-repeat; }
+    .div-sprites .col .vivara {
+      background: url("images/vivara.png") 0 no-repeat; }
+    .div-sprites .col .aquestir {
+      background: url("images/ovestir.png") 0 no-repeat; }
+    .div-sprites .col .staples {
+      background: url("images/staples.png") 0 no-repeat; }
+    .div-sprites .col .staples:hover {
+      background: url("images/staples-hover.png") 0 no-repeat; }
+    .div-sprites .col .farma {
+      background: url("images/ultra.png") 0 no-repeat; }
+    .div-sprites .col .farma:hover {
+      background: url("images/ultra-hover.png") 0 no-repeat; }
+    .div-sprites .col .fast {
+      background: url("images/fast.png") 0 no-repeat; }
+    .div-sprites .col .fast:hover {
+      background: url("images/fast-hover.png") 0 no-repeat; }
+    .div-sprites .col .xiomi {
+      background: url("images/xiomi.png") 0 no-repeat; }
+    .div-sprites .col .xiomi:hover {
+      background: url("images/xiomi-hover.png") 0 no-repeat; }
+    .div-sprites .col .enjoei {
+      background: url("images/enjoi.png") 0 no-repeat; }
+    .div-sprites .col .enjoei:hover {
+      background: url("images/enjoi-hover.png") 0 no-repeat; }
+    .div-sprites .col .icon {
+      height: 95px;
+      width: 140px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      margin: 5px 40px 0 40px; }
+    .div-sprites .col .icon:hover {
+      background-repeat: no-repeat;
+      margin: 5px 40px 0 40px; }
+  .div-sprites .col-2 {
+    margin: 25px  20px 20px 20px; }
   .div-sprites .text-sprites {
     margin: 50px 0 30px 0; }
     .div-sprites .text-sprites a {
@@ -408,12 +468,18 @@
 
   .div-sprites {
     text-align: -webkit-center; }
-    .div-sprites .mobly, .div-sprites .marabaz, .div-sprites .arezzo, .div-sprites .vivara, .div-sprites .aquestir, .div-sprites .staples, .div-sprites .farma, .div-sprites .fast, .div-sprites .xiomi, .div-sprites .enjoei {
-      margin: 0 0 0 0; }
-    .div-sprites .mobly:hover, .div-sprites .marabaz:hover, .div-sprites .arezzo:hover, .div-sprites .vivara:hover, .div-sprites .aquestir:hover, .div-sprites .staples:hover, .div-sprites .farma:hover, .div-sprites .fast:hover, .div-sprites .xiomi:hover, .div-sprites .enjoei:hover {
-      margin: 0 0 0 0; }
+    .div-sprites .col {
+      text-align: -webkit-center; }
+      .div-sprites .col .icon {
+        margin: 0 0 0 0; }
+      .div-sprites .col .icon:hover {
+        margin: 0 0 0 0; }
+      .div-sprites .col .text-sprites {
+        margin: 20px 0 20px 0; }
+    .div-sprites .col-2 {
+      margin: 0; }
     .div-sprites .text-sprites {
-      margin: 20px 0 20px 0; }
+      margin: 0px 0 30px 0; }
 
   footer .container-footer {
     padding: 50px 30px 30px 30px; }
@@ -422,6 +488,10 @@
       footer .container-footer .div-list-second .div-list-content {
         padding: 20px 0 0 40px; } }
 @media (min-width: 768px) and (max-width: 991px) {
+  .slick-proposta .slick-dots {
+    width: 100%;
+    margin: 0; }
+
   .bg-main {
     background-position: 0px 0px;
     height: 550px; }
@@ -462,12 +532,18 @@
 
   .div-sprites {
     text-align: -webkit-center; }
-    .div-sprites .mobly, .div-sprites .marabaz, .div-sprites .arezzo, .div-sprites .vivara, .div-sprites .aquestir, .div-sprites .staples, .div-sprites .farma, .div-sprites .fast, .div-sprites .xiomi, .div-sprites .enjoei {
-      margin: 0 0 0 0; }
-    .div-sprites .mobly:hover, .div-sprites .marabaz:hover, .div-sprites .arezzo:hover, .div-sprites .vivara:hover, .div-sprites .aquestir:hover, .div-sprites .staples:hover, .div-sprites .farma:hover, .div-sprites .fast:hover, .div-sprites .xiomi:hover, .div-sprites .enjoei:hover {
-      margin: 0 0 0 0; }
+    .div-sprites .col {
+      text-align: -webkit-center; }
+      .div-sprites .col .icon {
+        margin: 0 0 0 0; }
+      .div-sprites .col .icon:hover {
+        margin: 0 0 0 0; }
+      .div-sprites .col .text-sprites {
+        margin: 20px 0 20px 0; }
+    .div-sprites .col-2 {
+      margin: 0; }
     .div-sprites .text-sprites {
-      margin: 20px 0 20px 0; }
+      margin: 0px 0 30px 0; }
 
   footer .container-footer {
     padding: 50px 30px 30px 30px; }
@@ -476,6 +552,30 @@
       footer .container-footer .div-list-second .div-list-content {
         padding: 20px 0 0 25px; } }
 @media (min-width: 320px) and (max-width: 767px) {
+  .wrapper .container-header .row-my .li-blue {
+    margin: -6px 14px 2px 12px; }
+  .wrapper .container-header .row-my ul {
+    margin: 7.5px -2px; }
+
+  .wrapper .container-header .row-my .menu-link1 {
+    float: left;
+    margin: 0;
+    width: 52%;
+    text-align: -webkit-left; }
+
+  .wrapper .container-header .row-my .menu-link1 a {
+    text-align: left; }
+
+  .container-my .navbar-header button {
+    margin: 12px 43px 12px 0px; }
+    .container-my .navbar-header button .icon-bar {
+      background-color: #000;
+      height: 3px; }
+
+  .slick-proposta .slick-dots {
+    width: 100%;
+    margin: 0; }
+
   .bg-main {
     background-position: 0px 0px; }
     .bg-main .text-on-bg {
@@ -519,12 +619,16 @@
         width: 100%;
         text-align: -webkit-center; }
 
-  .div-sprites {
+  .div-sprites .col {
     text-align: -webkit-center; }
-    .div-sprites .mobly, .div-sprites .marabaz, .div-sprites .arezzo, .div-sprites .vivara, .div-sprites .aquestir, .div-sprites .staples, .div-sprites .farma, .div-sprites .fast, .div-sprites .xiomi, .div-sprites .enjoei {
+    .div-sprites .col .icon {
       margin: 0 0 0 0; }
-    .div-sprites .mobly:hover, .div-sprites .marabaz:hover, .div-sprites .arezzo:hover, .div-sprites .vivara:hover, .div-sprites .aquestir:hover, .div-sprites .staples:hover, .div-sprites .farma:hover, .div-sprites .fast:hover, .div-sprites .xiomi:hover, .div-sprites .enjoei:hover {
+    .div-sprites .col .icon:hover {
       margin: 0 0 0 0; }
+  .div-sprites .col-2 {
+    margin: 0; }
+  .div-sprites .text-sprites {
+    margin: 0px 0 30px 0; }
 
   footer .container-footer {
     padding: 0 30px; }
